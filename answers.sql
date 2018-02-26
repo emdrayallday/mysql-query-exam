@@ -34,7 +34,7 @@ SELECT a.name airline, f.departAirport, f.arriveAirport, avg(r.cost) AverageCost
 /*
 9) Which flight is the longest?
 */
-SELECT  departAirport, arriveAirport , max(miles) FROM flight GROUP BY ID ORDER BY miles DESC LIMIT 1;
+SELECT  departAirport, arriveAirport , max(miles) miles FROM flight GROUP BY ID ORDER BY miles DESC LIMIT 1;
 /*
 10) List the top 5 passengers that have flown the most miles. Order by miles.
 */
